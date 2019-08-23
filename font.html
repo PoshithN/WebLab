@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>fontGrowNshrink</title>
+<script>
+var font=0;loading;
+function start()
+{
+loading=window.setInterval("inc()",50);
+}
+function inc()
+{
+font++;
+display.innerHTML="TEXT-GROW:"+font+"pt";
+display.style.fontSize=font+"pt";
+if(font>50)
+{
+window.clearTimeout(loading);
+loading=window.setInterval("dec()",50);
+}
+display.style.color="red";
+}
+function dec()
+{
+font--;
+display.innerHTML="TEXT-SHRINK:"+font+"pt";
+display.style.fontSize=font+"pt";
+if(font<0)
+{
+window.clearTimeout(loading);
+loading=window.setInterval("inc()",50);
+}
+display.style.color="blue";
+}
+</script>
+</head>
+<body style="background-color:black" onload="start()">
+<center>
+<p style="margin-top:250px" id="display"></p>
+</center>
+</body>
+</html>
