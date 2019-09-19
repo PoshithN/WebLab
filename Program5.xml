@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/css" href="Program_5.css" ?>
+<student>
+<stud>
+<name>NAME : Sudeep</name>
+<USN>USN : 4VV15ME001</USN>
+
+<clg>COLLEGE : VVCE</clg>
+<branch>BRANCH : Mechanical Engineering</branch>
+<yr>YEAR : 2019</yr>
+<e-mail>E-Mail : KSudeep@gmail.com</e-mail>
+</stud>
+<stud>
+<name>NAME : Anaswara</name>
+<USN>USN : 4VV16CS001</USN>
+
+<clg>COLLEGE : VVCE</clg>
+<branch>BRANCH : Computer Science and Engineering</branch>
+<yr>YEAR : 2020</yr>
+<e-mail>E-Mail : AnaswaraR@gmail.com</e-mail>
+</stud>
+<stud><name>NAME : Arjun</name>
+<USN>USN : 4VV16IS050</USN>
+
+<clg>COLLEGE : VVCE</clg>
+<branch>BRANCH : Information Science and Engineering</branch>
+<yr>YEAR : 2020</yr>
+<e-mail>E-Mail : AArjun@gmail.com</e-mail>
+</stud>
+</student>
