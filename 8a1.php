@@ -2,7 +2,7 @@
 if(isset($_POST['res']))
 {
 	$res=$_POST['disp'];
-	$res=eval('return '.$res.';');
+	$res=eval('return '.$res.';');#1 gap space between return and closing quotes 
 }
 ?>
 <html>
