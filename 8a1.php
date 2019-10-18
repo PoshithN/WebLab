@@ -20,7 +20,7 @@ input[type="text"]{width:100%;height:100%}
 <center>
 <table style="background-color:red;" border=1>
 <tr>
-<td  colspan=4><input type="text" name="disp" value="<?php if(isset($res)){ echo $res;} ?>"></td>#need not require { and }
+<td  colspan=4><input type="text" name="disp" value="<?php if(isset($res)) echo $res; ?>"></td>
 </tr>
 <tr>
 <td><input style="color: white; background-color:black;"type="button"value="1" onclick="cal.disp.value += '1' "></td>
