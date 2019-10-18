@@ -1,5 +1,5 @@
 <?php
-if(isset($_POST['res']))
+if(isset($_POST['but']))
 {
 	$res=$_POST['disp'];
 	$res=eval('return '.$res.';');#1 gap space between return and closing quotes 
@@ -20,7 +20,7 @@ input[type="text"]{width:100%;height:100%}
 <center>
 <table style="background-color:red;" border=1>
 <tr>
-<td  colspan=4><input type="text" name="disp" value="<?php if(isset($res)){ echo $res;} ?>"></td>
+<td  colspan=4><input type="text" name="disp" value="<?php if(isset($res)){ echo $res;} ?>"></td>#need not require { and }
 </tr>
 <tr>
 <td><input style="color: white; background-color:black;"type="button"value="1" onclick="cal.disp.value += '1' "></td>
@@ -44,7 +44,7 @@ input[type="text"]{width:100%;height:100%}
 <td><input style="color: white; background-color:black;"type="button"value="c" onclick="cal.disp.value = ' ' "></td>
 <td><input style="color: white; background-color:black;"type="button"value="0" onclick="cal.disp.value += '0' "></td>
 <td><input style="color: white; background-color:black;"type="button"value="+" onclick="cal.disp.value += '+' "></ts>
-<td><input style="color: white; background-color:black;"type="submit"value="=" name="res"></td>
+<td><input style="color: white; background-color:black;"type="submit"value="=" name="but"></td>
 </tr>
 </table>
 </center>
