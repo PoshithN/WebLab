@@ -18,14 +18,14 @@ echo "</br>";
 	echo " ".$a1[$i][$j];
 	}
 }
-echo "<h4>matrix a1</h4>";
+echo "<h4>matrix a2</h4>";
 for($i=0;$i<=1;$i++){
 echo "<br>";
  for($j=0;$j<=2;$j++){
 	echo " ".$a2[$i][$j];
 	}
 }
-echo "<h4>matrix a1</h4>";
+echo "<h4>matrix res</h4>";
 for($i=0;$i<=1;$i++){
 echo "<br/>";
  for($j=0;$j<=2;$j++){
