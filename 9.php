@@ -1,7 +1,7 @@
 <?php
 $allTheStates = "Mississippi Alabama Texas Massachusetts Kansas";
 $statesArray = [];
-$states1 = explode(' ', $allTheStates);
+$states1 = explode(' ', $allTheStates);#space between quotes
 $i = 0;
 //states that ends in xas
 foreach ($states1 as $state) {
@@ -13,7 +13,7 @@ foreach ($states1 as $state) {
 }
 //states that begins with k and ends in s
 foreach ($states1 as $state) {
- if (preg_match('/^k.*s$/i', ($state))) {
+ if (preg_match('/^k.*s$/i', ($state))) {#'i' is used to overcome case sensitivity...use 'K' instead of 'k' to avoid usage of 'i' 
  $statesArray[$i] = ($state);
  $i = $i + 1;
  echo "<br>The states that begins with k and ends in s:" . $state;
