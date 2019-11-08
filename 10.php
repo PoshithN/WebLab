@@ -21,7 +21,7 @@ margin:auto;
 <?php
 $sname = "localhost";
 $uname = "root";
-$pswrd = "";
+$pswrd = "";#na space between quotes
 $dbname = "prog10";
 $a=[];
 $conn=mysqli_connect($sname,$uname,$pswrd,$dbname);
