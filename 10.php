@@ -34,7 +34,7 @@ $result = $conn->query($sql);
 
 echo "<br>";
 echo "<center> BEFORE SORTING </center>";
-echo "<table border='2'>";
+echo "<table>";
 echo "<tr>";
 echo "<th>USN</th><th>NAME</th><th>SEM</th></tr>";
 
@@ -42,8 +42,8 @@ if($result->num_rows>0)
 {
 	while($row = $result->fetch_assoc()){
 		echo "<tr>";
-		echo "<td>". $row["USN"]."</td>";
-		echo "<td>". $row["Name"]."</td>";
+		echo "<td>". $row['USN']."</td>";
+		echo "<td>". $row['Name']."</td>";
 		echo "<td>". $row["Sem"]."</td></tr>";
 		array_push($a,$row["USN"]);
 	}
@@ -58,8 +58,10 @@ for($i=0; $i<($n-1); $i++)
 {
 	$pos= $i;
 	for ( $j = $i + 1 ; $j < $n ; $j++ ) {
-	if ( $a[$pos] > $a[$j] )
-	$pos= $j;
+		if ( $a[$pos] > $a[$j] )
+		{
+			$pos= $j;
+		}
 	}
 	if ( $pos!= $i ) {
 		$temp=$a[$i];
