@@ -52,7 +52,7 @@ else
 echo "Table is empty";
 echo "</table>";
 $n=count($a);
-$b=$a;
+
 
 for($i=0; $i<($n-1); $i++)
 {
@@ -80,21 +80,21 @@ if($result->num_rows>0)
 			if($row["USN"]== $a[$i]) {
 				$c[$i]=$row["Name"];
 				$d[$i]=$row["Sem"];
-						}
 			}
+		}
 	}
 }
 
 echo "<br>";
 echo "<center> AFTER SORTING <center>";
-echo "<table border='2'>";
+echo "<table>";
 echo "<tr>";
 echo "<th>USN</th><th>NAME</th><th>SEM</th></tr>";
 for($i=0;$i<$n;$i++) {
-echo "<tr>";
-echo "<td>". $a[$i]."</td>";
-echo "<td>". $c[$i]."</td>";
-echo "<td>". $d[$i]."</td></tr>";
+	echo "<tr>";
+	echo "<td>". $a[$i]."</td>";
+	echo "<td>". $c[$i]."</td>";
+	echo "<td>". $d[$i]."</td></tr>";
 }
 echo "</table>";
 $conn->close();
