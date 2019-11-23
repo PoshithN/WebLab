@@ -5,7 +5,7 @@ $states1 = explode(' ', $allTheStates);#space between quotes
 $i = 0;
 //states that ends in xas
 foreach ($states1 as $state) {
- if (preg_match('/xas$/', ($state))) {
+ if (preg_match('/xas$/', $state)) {
  $statesArray[$i] = ($state);
  $i = $i + 1;
  echo "<br>The States that ends in xas:" . $state;
