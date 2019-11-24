@@ -19,4 +19,4 @@ for ($col=0; $col<3; $col++) {
  echo " ".$trans[$col][$row];
 	}
 }
-#even if not ending with "?>", Program executess normally
+?>
