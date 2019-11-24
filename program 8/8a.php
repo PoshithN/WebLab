@@ -2,7 +2,7 @@
 if(isset($_POST['but']))
 {
 	$res=$_POST['disp'];
-	$res=eval('return '.$res.';');
+	$res=eval('return '.$res.';');#space between return and quote(')
 }
 ?>
 <html>
